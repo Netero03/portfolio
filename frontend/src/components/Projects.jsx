@@ -4,46 +4,42 @@ import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 
-import careerquillImg from "../assets/careerquill.png";
-import flowmindImg from "../assets/flowmind.png";
-import proctorlyImg from "../assets/proctorly.png";
-import hirelane from "../assets/hirelane.png";
+import voicecanvas from "../assets/voicecanvas.png";
+import chattr from "../assets/chattr.png";
 
 const projects = [
   {
-    title: "HireLane",
-    subtitle: "Job Application Automation & Tracking Platform",
+    title: "VoiceCanvas",
+    subtitle: "Realtime Speech-to-Whiteboard",
     description:
-      "Chrome extension automating job applications across 5 ATS platforms, with a unified dashboard tracking status, deadlines, and JD-resume match scores.",
+      "Transforms spoken system-design ideas into editable architecture diagrams using Gemini Live API.",
     highlights: [
-      "5 ATS platforms supported (Workday, Greenhouse, Wellfound, Internshala, Naukri)",
-      "3-layer field classification (static + cache + Gemini fallback)",
-      "Multi-stage Workday flow handling with stable session IDs",
+      "Built a browser-based React + TypeScript whiteboard using the tldraw SDK for interactive diagram creation.",
+      "Integrated Gemini Live API to convert voice commands into real-time drawing, labeling, and smart connections.",
+      "Added AI-powered architecture analysis with Gemini 2.5 Flash to recommend missing components.",
+      "Implemented responsive routing with Vite and secure API-key handling for voice sessions."
     ],
     tech: [
       "React",
       "Node.js",
       "Express",
-      "MongoDB",
-      "Redis",
       "Gemini API",
-      "Chrome Extension APIs",
-      "JWT",
     ],
-    github: "https://github.com/Netero03/HireLane",
-    live: "https://hire-lane-dun.vercel.app/",
-    image: hirelane,
+    github: "https://github.com/Netero03/VoiceCanvas",
+    live: "https://the-voice-canvas.vercel.app/",
+    image: voicecanvas,
     accent: "from-[#F97316]/40",
   },
   {
-    title: "CareerQuill",
-    subtitle: "Resume Generation & ATS Scoring Platform",
+    title: "Chattr",
+    subtitle: "AI-Powered Messaging & RAG Assistant",
     description:
-      "End-to-end resume builder with ATS scoring using NLP to match resumes against job descriptions and suggest keywords.",
+      "MERN chat platform with real-time AI summarization and streaming analytics."
     highlights: [
-      "6 resume templates (PDF & DOCX)",
-      "NLP-based ATS scoring",
-      "JWT auth & resume versioning",
+      "Developed a streaming RAG assistant using LangChain to autonomously summarize lengthy chat threads and extract actionable tasks.",
+      "Integrated Socket.IO to stream AI-generated insights and smart replies into active conversations with minimal latency.",
+      "Backend deployed on AWS, leveraging cloud storage for robust media handling.",
+      "Built a responsive interface using React and TailwindCSS, ensuring a fluid user experience."
     ],
     tech: [
       "React",
@@ -51,65 +47,16 @@ const projects = [
       "Node.js",
       "Express",
       "MongoDB",
-      "Python",
-      "FastAPI",
-      "spaCy",
-      "scikit-learn",
+      "Socket.IO",
+      "RAG",
+      "LangChain",
     ],
-    github: "https://github.com/Netero03/CareerQuill",
-    live: "https://career-quill-umber.vercel.app/",
-    image: careerquillImg,
+    github: "https://github.com/Netero03/Chattr",
+    live: "https://chattr-ai.vercel.app/",
+    image: chattr,
     accent: "from-[#FBBF24]/40",
   },
-  {
-    title: "FlowMind-AI",
-    subtitle: "No-Code AI Workflow Builder",
-    description:
-      "Visual platform to design and execute AI workflows using drag-and-drop nodes, document retrieval, and LLM orchestration.",
-    highlights: [
-      "Visual workflow editor",
-      "Semantic search (90%+ accuracy)",
-      "Tiered access & orchestration",
-    ],
-    tech: [
-      "React",
-      "React Flow",
-      "FastAPI",
-      "PostgreSQL",
-      "MongoDB",
-      "ChromaDB",
-      "Gemini LLM",
-      "Docker",
-    ],
-    github: "https://github.com/Netero03/FlowMind-AI",
-    live: "https://flow-mind-ai-tan.vercel.app",
-    image: flowmindImg,
-    accent: "from-[#F97316]/40",
-  },
-  {
-    title: "Proctorly",
-    subtitle: "Real-Time Video Proctoring System",
-    description:
-      "Web-based proctoring system monitoring video, audio, and object detection to generate session integrity reports.",
-    highlights: [
-      "Face & object detection",
-      "Real-time event logging",
-      "PDF integrity reports",
-    ],
-    tech: [
-      "React",
-      "Tailwind",
-      "MediaPipe",
-      "TensorFlow.js",
-      "Node.js",
-      "MongoDB",
-      "jsPDF",
-    ],
-    github: "https://github.com/Netero03/Proctorly",
-    live: "https://proctorly-kappa.vercel.app",
-    image: proctorlyImg,
-    accent: "from-[#FBBF24]/40",
-  },
+  
 ];
 
 const ProjectCard = ({ project }) => {
