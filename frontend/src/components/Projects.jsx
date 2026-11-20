@@ -34,7 +34,7 @@ const projects = [
     title: "Chattr",
     subtitle: "AI-Powered Messaging & RAG Assistant",
     description:
-      "MERN chat platform with real-time AI summarization and streaming analytics."
+      "MERN chat platform with real-time AI summarization and streaming analytics.",
     highlights: [
       "Developed a streaming RAG assistant using LangChain to autonomously summarize lengthy chat threads and extract actionable tasks.",
       "Integrated Socket.IO to stream AI-generated insights and smart replies into active conversations with minimal latency.",
