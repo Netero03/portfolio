@@ -35,10 +35,8 @@ PORTFOLIO/
 │   │
 │   └── src/
 │       ├── assets/                      # Images and media files
-│       │   ├── careerquill.png          # Project screenshot
-│       │   ├── flowmind.png             # Project screenshot
-│       │   ├── proctorly.png            # Project screenshot
-│       │   ├── hireme.png               # Project screenshot
+│       │   ├── voicecanvas.png          # Project screenshot
+│       │   ├── chattr.png             # Project screenshot
 │       │   ├── profile.png              # Profile image
 │       │   └── passport_size.jpg        # Small profile image
 │       │
