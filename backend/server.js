@@ -8,8 +8,8 @@ dotenv.config();
 const app = express();
 
 const allowedOrigins = [
-  "http://localhost:5173"
-  
+  "http://localhost:5173",
+  "https://jatinpatil.me"
 ];
 
 app.use(cors({
@@ -54,5 +54,5 @@ app.post("/send-email", async (req, res) => {
 });
 
 app.listen(process.env.PORT || 5000, () => {
-  console.log("Server running");
+  console.log("Server running on port " + (process.env.PORT || 5000));
 });
